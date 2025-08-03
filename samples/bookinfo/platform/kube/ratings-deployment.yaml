@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ratings-{{.Iteration}}-{{.Replica}}
+  namespace: bookinfo-test
+  labels:
+    app: ratings
+    version: v1
+    kube-burner-job: {{.JobName}}
+    kube-burner-uuid: {{.UUID}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ratings
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: ratings
+        version: v1
+    spec:
+      containers:
+      - name: ratings
+        image: {{.containerImage}}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9080
+        command:
+        - sh
+        - -c
+        - |
+          echo "[TIMING_RATINGS] container_start_ms:$(date +%s%3N)"
+          node /opt/microservices/ratings.js 9080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ratings-{{.Iteration}}-{{.Replica}}
+  namespace: bookinfo-test
+  labels:
+    app: ratings
+    service: ratings
+    kube-burner-job: {{.JobName}}
+spec:
+  ports:
+  - port: 9080
+    name: http
+  selector:
+    app: ratings

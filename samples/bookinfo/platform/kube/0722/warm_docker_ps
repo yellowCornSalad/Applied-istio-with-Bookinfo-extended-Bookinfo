@@ -1,0 +1,45 @@
+CONTAINER ID   IMAGE                       COMMAND                  CREATED        STATUS        PORTS     NAMES
+aa50b1ff2e1c   781b1662ef67                "/usr/local/bin/pilo…"   2 hours ago    Up 2 hours              k8s_istio-proxy_productpage-v1-d5789fdfb-vhhpk_default_e454d48c-560c-4477-8b6a-9467634b1275_0
+6a377298b1ec   bf81a83a6b71                "python productpage.…"   2 hours ago    Up 2 hours              k8s_productpage_productpage-v1-d5789fdfb-vhhpk_default_e454d48c-560c-4477-8b6a-9467634b1275_0
+4ec1a1e4351f   registry.k8s.io/pause:3.9   "/pause"                 2 hours ago    Up 2 hours              k8s_POD_productpage-v1-d5789fdfb-vhhpk_default_e454d48c-560c-4477-8b6a-9467634b1275_0
+00d9c79a2a19   781b1662ef67                "/usr/local/bin/pilo…"   3 hours ago    Up 3 hours              k8s_istio-proxy_reviews-v2-6f85cb9b7c-qdcvd_default_70f7366b-741f-4092-b781-1d5d4e97ae2a_0
+444bda6b72bf   394edaff515a                "/opt/ol/helpers/run…"   3 hours ago    Up 3 hours              k8s_reviews_reviews-v2-6f85cb9b7c-qdcvd_default_70f7366b-741f-4092-b781-1d5d4e97ae2a_0
+0c2bf688956a   781b1662ef67                "/usr/local/bin/pilo…"   3 hours ago    Up 3 hours              k8s_istio-proxy_reviews-v3-6f5b775685-h5zv4_default_966dbeb3-3edd-4870-8719-35b518d34ba0_0
+1026b89a7573   781b1662ef67                "/usr/local/bin/pilo…"   3 hours ago    Up 3 hours              k8s_istio-proxy_reviews-v1-6584ddcf65-m6r27_default_99b37139-af10-4553-9383-52a63c2df56e_0
+761ee160421d   413c0a60e075                "/opt/ol/helpers/run…"   3 hours ago    Up 3 hours              k8s_reviews_reviews-v3-6f5b775685-h5zv4_default_966dbeb3-3edd-4870-8719-35b518d34ba0_0
+d300b226adca   201ca6f0d352                "/opt/ol/helpers/run…"   3 hours ago    Up 3 hours              k8s_reviews_reviews-v1-6584ddcf65-m6r27_default_99b37139-af10-4553-9383-52a63c2df56e_0
+0f6d91048efa   registry.k8s.io/pause:3.9   "/pause"                 3 hours ago    Up 3 hours              k8s_POD_reviews-v3-6f5b775685-h5zv4_default_966dbeb3-3edd-4870-8719-35b518d34ba0_0
+a299700d6509   registry.k8s.io/pause:3.9   "/pause"                 3 hours ago    Up 3 hours              k8s_POD_reviews-v2-6f85cb9b7c-qdcvd_default_70f7366b-741f-4092-b781-1d5d4e97ae2a_0
+c5d048076dcc   registry.k8s.io/pause:3.9   "/pause"                 3 hours ago    Up 3 hours              k8s_POD_reviews-v1-6584ddcf65-m6r27_default_99b37139-af10-4553-9383-52a63c2df56e_0
+d1b32f8edbdb   781b1662ef67                "/usr/local/bin/pilo…"   3 hours ago    Up 3 hours              k8s_istio-proxy_ratings-v1-7c9bd4b87f-q2j57_default_1704b665-96a0-4448-ba32-fa40d19494c9_0
+c2bd5c63c359   716ba36a86a8                "docker-entrypoint.s…"   3 hours ago    Up 3 hours              k8s_ratings_ratings-v1-7c9bd4b87f-q2j57_default_1704b665-96a0-4448-ba32-fa40d19494c9_0
+797b81304c18   registry.k8s.io/pause:3.9   "/pause"                 3 hours ago    Up 3 hours              k8s_POD_ratings-v1-7c9bd4b87f-q2j57_default_1704b665-96a0-4448-ba32-fa40d19494c9_0
+e085a57374eb   781b1662ef67                "/usr/local/bin/pilo…"   3 hours ago    Up 3 hours              k8s_istio-proxy_details-v1-65cfcf56f9-9rqk2_default_55c7194f-1585-4ba0-89b0-07a514517db1_0
+c68147941651   d29a255449a8                "ruby details.rb 9080"   3 hours ago    Up 3 hours              k8s_details_details-v1-65cfcf56f9-9rqk2_default_55c7194f-1585-4ba0-89b0-07a514517db1_0
+2376c9919469   registry.k8s.io/pause:3.9   "/pause"                 3 hours ago    Up 3 hours              k8s_POD_details-v1-65cfcf56f9-9rqk2_default_55c7194f-1585-4ba0-89b0-07a514517db1_0
+-bc9f-8ea2be827c99_0
+561780adb1d7   5ce700671515                "/kube-state-metrics…"   2 days ago     Up 2 days               k8s_kube-state-metrics_kube-state-metrics-6fd645d6d5-fj8d5_monitoring_bbbde900-8635-47bb-bbe1-d6b2aff154c9_4
+b335c5dd1962   07655ddf2eeb                "/dashboard --insecu…"   2 days ago     Up 2 days               k8s_kubernetes-dashboard_kubernetes-dashboard-779776cb65-v5nwh_kubernetes-dashboard_f0f71158-bb70-4f04-98bd-f7d78b8221ef_20
+9f4c7920ae89   6e38f40d628d                "/storage-provisioner"   2 days ago     Up 2 days               k8s_storage-provisioner_storage-provisioner_kube-system_effbd04c-e930-4cb2-8729-20edd860f0a0_26
+
+265eabcfaff4   781b1662ef67                "/usr/local/bin/pilo…"   2 days ago     Up 2 days               k8s_istio-proxy_istio-ingressgateway-75fcb94949-2mf89_istio-system_f9707266-7908-4989-8242-be8041e0de8a_15
+
+
+
+
+1e7f52867e8c   53aa5d284f3f                "/usr/local/bin/pilo…"   2 days ago     Up 2 days               k8s_discovery_istiod-5f7944b777-vm5px_istio-system_6986813c-53a6-4d63-8b69-2aedefd16032_15
+80b34cd0e55b   259c8277fcbb                "kube-scheduler --au…"   2 days ago     Up 2 days               k8s_kube-scheduler_kube-scheduler-istio_kube-system_fd2d4223b3d976558160396fab0bf01c_15
+341af8822c80   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_preloadlnvg6-cbhgp_preload-kube-burner_f7c42e45-e583-4549-a472-832b1d92d4a1_14
+
+dacb63c3c95a   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_dashboard-metrics-scraper-b5fc48f67-llrj9_kubernetes-dashboard_36c2d3ae-a3b5-4956-b1d3-ad0ad44580d2_14
+1010ac883bac   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_istio-ingressgateway-75fcb94949-2mf89_istio-system_f9707266-7908-4989-8242-be8041e0de8a_15
+6c424b2f7f36   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_kubernetes-dashboard-779776cb65-v5nwh_kubernetes-dashboard_f0f71158-bb70-4f04-98bd-f7d78b8221ef_14
+6a7dbb4bc291   3861cfcd7c04                "etcd --advertise-cl…"   2 days ago     Up 2 days               k8s_etcd_etcd-istio_kube-system_baf267091892584e6112962bab1b44ed_15
+1628bd2f55cb   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_kube-apiserver-istio_kube-system_5c88c781d0feefd986a08f01e4cdf76b_15
+4d23e6053246   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_kube-controller-manager-istio_kube-system_06ab7e688848154fded1724d8a34c6f9_15
+b6e2b6c628a9   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_kube-proxy-qjtx4_kube-system_a8dcf3cb-5afb-495d-b1e8-b31e522ad2fa_15
+1e978af117e2   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_storage-provisioner_kube-system_effbd04c-e930-4cb2-8729-20edd860f0a0_15
+b652fdd42789   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_coredns-7db6d8ff4d-zq6sf_kube-system_59f25abb-a6f4-4a10-9af6-55a6ed0df5cb_15
+a69e1b21a5c2   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_kube-scheduler-istio_kube-system_fd2d4223b3d976558160396fab0bf01c_15
+3cccae872d5f   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_istiod-5f7944b777-vm5px_istio-system_6986813c-53a6-4d63-8b69-2aedefd16032_15
+bd3b7773151b   registry.k8s.io/pause:3.9   "/pause"                 2 days ago     Up 2 days               k8s_POD_etcd-istio_kube-system_baf267091892584e6112962bab1b44ed_15c

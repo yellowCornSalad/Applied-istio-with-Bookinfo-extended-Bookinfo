@@ -1,0 +1,20 @@
+CONTAINER ID   IMAGE                       COMMAND                  CREATED        STATUS        PORTS     NAMES
+* aa50b1ff2e1c   781b1662ef67                "/usr/local/bin/pilo…"   19 hours ago   Up 19 hours             k8s_istio-proxy_productpage-v1-d5789fdfb-vhhpk_default_e454d48c-560c-4477-8b6a-9467634b1275_0
+* 6a377298b1ec   bf81a83a6b71                "python productpage.…"   19 hours ago   Up 19 hours             k8s_productpage_productpage-v1-d5789fdfb-vhhpk_default_e454d48c-560c-4477-8b6a-9467634b1275_0
+* 00d9c79a2a19   781b1662ef67                "/usr/local/bin/pilo…"   20 hours ago   Up 20 hours             k8s_istio-proxy_reviews-v2-6f85cb9b7c-qdcvd_default_70f7366b-741f-4092-b781-1d5d4e97ae2a_0
+* 444bda6b72bf   394edaff515a                "/opt/ol/helpers/run…"   20 hours ago   Up 20 hours             k8s_reviews_reviews-v2-6f85cb9b7c-qdcvd_default_70f7366b-741f-4092-b781-1d5d4e97ae2a_0
+* 0c2bf688956a   781b1662ef67                "/usr/local/bin/pilo…"   20 hours ago   Up 20 hours             k8s_istio-proxy_reviews-v3-6f5b775685-h5zv4_default_966dbeb3-3edd-4870-8719-35b518d34ba0_0
+* 1026b89a7573   781b1662ef67                "/usr/local/bin/pilo…"   20 hours ago   Up 20 hours             k8s_istio-proxy_reviews-v1-6584ddcf65-m6r27_default_99b37139-af10-4553-9383-52a63c2df56e_0
+* 761ee160421d   413c0a60e075                "/opt/ol/helpers/run…"   20 hours ago   Up 20 hours             k8s_reviews_reviews-v3-6f5b775685-h5zv4_default_966dbeb3-3edd-4870-8719-35b518d34ba0_0
+* d300b226adca   201ca6f0d352                "/opt/ol/helpers/run…"   20 hours ago   Up 20 hours             k8s_reviews_reviews-v1-6584ddcf65-m6r27_default_99b37139-af10-4553-9383-52a63c2df56e_0
+* d1b32f8edbdb   781b1662ef67                "/usr/local/bin/pilo…"   20 hours ago   Up 20 hours             k8s_istio-proxy_ratings-v1-7c9bd4b87f-q2j57_default_1704b665-96a0-4448-ba32-fa40d19494c9_0
+c2bd5c63c359   716ba36a86a8                "docker-entrypoint.s…"   20 hours ago   Up 20 hours             k8s_ratings_ratings-v1-7c9bd4b87f-q2j57_default_1704b665-96a0-4448-ba32-fa40d19494c9_0
+e085a57374eb   781b1662ef67                "/usr/local/bin/pilo…"   20 hours ago   Up 20 hours             k8s_istio-proxy_details-v1-65cfcf56f9-9rqk2_default_55c7194f-1585-4ba0-89b0-07a514517db1_0
+c68147941651   d29a255449a8                "ruby details.rb 9080"   20 hours ago   Up 20 hours             k8s_details_details-v1-65cfcf56f9-9rqk2_default_55c7194f-1585-4ba0-89b0-07a514517db1_0
+
+9f4c7920ae89   6e38f40d628d                "/storage-provisioner"   2 days ago     Up 2 days               k8s_storage-provisioner_storage-provisioner_kube-system_effbd04c-e930-4cb2-8729-20edd860f0a0_26
+265eabcfaff4   781b1662ef67                "/usr/local/bin/pilo…"   2 days ago     Up 2 days               k8s_istio-proxy_istio-ingressgateway-75fcb94949-2mf89_istio-system_f9707266-7908-4989-8242-be8041e0de8a_15
+
+
+
+

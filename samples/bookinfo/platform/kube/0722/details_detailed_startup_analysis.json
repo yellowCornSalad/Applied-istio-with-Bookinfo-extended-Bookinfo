@@ -1,0 +1,700 @@
+{
+  "service": "details",
+  "analysis_timestamp": "2025-07-23T10:30:55.581740",
+  "pod_lifecycle": {},
+  "container_states": {
+    "details-v1-65cfcf56f9-crpz7": {
+      "pod_name": "details-v1-65cfcf56f9-crpz7",
+      "start_tracking_time": 1753234212133.3787,
+      "containers": {
+        "details": {
+          "states_history": [
+            {
+              "timestamp_ms": 1753234221034.4944,
+              "elapsed_ms": 8901.11572265625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234222196.0002,
+              "elapsed_ms": 10062.62158203125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234223320.5254,
+              "elapsed_ms": 11187.146728515625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234224450.946,
+              "elapsed_ms": 12317.5673828125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234225573.801,
+              "elapsed_ms": 13440.42236328125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234226728.3376,
+              "elapsed_ms": 14594.958984375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234227899.5203,
+              "elapsed_ms": 15766.1416015625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234229047.6094,
+              "elapsed_ms": 16914.230712890625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234230238.9897,
+              "elapsed_ms": 18105.611083984375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234231363.843,
+              "elapsed_ms": 19230.46435546875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234232509.9133,
+              "elapsed_ms": 20376.53466796875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234233690.8918,
+              "elapsed_ms": 21557.51318359375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234234832.667,
+              "elapsed_ms": 22699.288330078125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234236028.3928,
+              "elapsed_ms": 23895.01416015625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234237188.639,
+              "elapsed_ms": 25055.26025390625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234238302.5928,
+              "elapsed_ms": 26169.214111328125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234239455.7695,
+              "elapsed_ms": 27322.390869140625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234240638.5686,
+              "elapsed_ms": 28505.18994140625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234241754.9175,
+              "elapsed_ms": 29621.538818359375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234242893.2837,
+              "elapsed_ms": 30759.905029296875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234244020.2139,
+              "elapsed_ms": 31886.835205078125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234245165.9954,
+              "elapsed_ms": 33032.61669921875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234246305.7686,
+              "elapsed_ms": 34172.389892578125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234247431.8643,
+              "elapsed_ms": 35298.485595703125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234248559.9175,
+              "elapsed_ms": 36426.538818359375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234249679.776,
+              "elapsed_ms": 37546.397216796875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234250817.4875,
+              "elapsed_ms": 38684.10888671875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234251962.6636,
+              "elapsed_ms": 39829.284912109375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234253045.7554,
+              "elapsed_ms": 40912.376708984375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234254191.6494,
+              "elapsed_ms": 42058.270751953125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            }
+          ]
+        },
+        "istio-proxy": {
+          "states_history": [
+            {
+              "timestamp_ms": 1753234221034.4944,
+              "elapsed_ms": 8901.11572265625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234222196.0002,
+              "elapsed_ms": 10062.62158203125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234223320.5254,
+              "elapsed_ms": 11187.146728515625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234224450.946,
+              "elapsed_ms": 12317.5673828125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234225573.801,
+              "elapsed_ms": 13440.42236328125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234226728.3376,
+              "elapsed_ms": 14594.958984375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234227899.5203,
+              "elapsed_ms": 15766.1416015625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234229047.6094,
+              "elapsed_ms": 16914.230712890625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234230238.9897,
+              "elapsed_ms": 18105.611083984375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234231363.843,
+              "elapsed_ms": 19230.46435546875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234232509.9133,
+              "elapsed_ms": 20376.53466796875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234233690.8918,
+              "elapsed_ms": 21557.51318359375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234234832.667,
+              "elapsed_ms": 22699.288330078125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234236028.3928,
+              "elapsed_ms": 23895.01416015625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234237188.639,
+              "elapsed_ms": 25055.26025390625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234238302.5928,
+              "elapsed_ms": 26169.214111328125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234239455.7695,
+              "elapsed_ms": 27322.390869140625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234240638.5686,
+              "elapsed_ms": 28505.18994140625,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234241754.9175,
+              "elapsed_ms": 29621.538818359375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234242893.2837,
+              "elapsed_ms": 30759.905029296875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234244020.2139,
+              "elapsed_ms": 31886.835205078125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234245165.9954,
+              "elapsed_ms": 33032.61669921875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234246305.7686,
+              "elapsed_ms": 34172.389892578125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234247431.8643,
+              "elapsed_ms": 35298.485595703125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234248559.9175,
+              "elapsed_ms": 36426.538818359375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234249679.776,
+              "elapsed_ms": 37546.397216796875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234250817.4875,
+              "elapsed_ms": 38684.10888671875,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234251962.6636,
+              "elapsed_ms": 39829.284912109375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234253045.7554,
+              "elapsed_ms": 40912.376708984375,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            },
+            {
+              "timestamp_ms": 1753234254191.6494,
+              "elapsed_ms": 42058.270751953125,
+              "ready": true,
+              "restart_count": 0,
+              "state": {
+                "running": {
+                  "startedAt": "2025-07-23T01:30:13Z"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "detailed_analysis": {
+    "details-v1-65cfcf56f9-crpz7": {
+      "final_state": {
+        "ready_time_ms": 1753234255420.5837,
+        "events": [
+          "Normal  Scheduled  43s   default-scheduler  Successfully assigned default/details-v1-65cfcf56f9-crpz7 to istio",
+          "Normal  Pulled     42s   kubelet            Container image \"docker.io/istio/proxyv2:1.23.0\" already present on machine",
+          "Normal  Created    42s   kubelet            Created container istio-init",
+          "Normal  Started    42s   kubelet            Started container istio-init",
+          "Normal  Pulled     42s   kubelet            Container image \"docker.io/istio/examples-bookinfo-details-v1:1.20.1\" already present on machine",
+          "Normal  Created    42s   kubelet            Created container details",
+          "Normal  Started    42s   kubelet            Started container details",
+          "Normal  Pulled     42s   kubelet            Container image \"docker.io/istio/proxyv2:1.23.0\" already present on machine",
+          "Normal  Created    42s   kubelet            Created container istio-proxy",
+          "Normal  Started    42s   kubelet            Started container istio-proxy"
+        ]
+      }
+    }
+  }
+}

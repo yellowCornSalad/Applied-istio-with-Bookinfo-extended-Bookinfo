@@ -1,0 +1,51 @@
+{
+  "analysis_timestamp": "2025-07-30T13:23:58.520423",
+  "analysis_method": "realtime_tracking",
+  "environment": "minikube-istio-bookinfo",
+  "measurements": {
+    "productpage": {
+      "service": "productpage",
+      "start_time": 1753849379335.2449,
+      "stages": {
+        "pod_created": 6182.743896484375,
+        "istio-proxy_ready": 6182.743896484375,
+        "productpage_ready": 6182.743896484375,
+        "all_containers_ready": 6182.743896484375
+      },
+      "total_time": 6182.743896484375
+    },
+    "details": {
+      "service": "details",
+      "start_time": 1753849395626.8572,
+      "stages": {
+        "pod_created": 1171.3544921875,
+        "details_ready": 2268.98974609375,
+        "istio-proxy_ready": 3447.91162109375,
+        "all_containers_ready": 3447.91162109375
+      },
+      "total_time": 3447.91162109375
+    },
+    "ratings": {
+      "service": "ratings",
+      "start_time": 1753849409247.359,
+      "stages": {
+        "pod_created": 1021.72998046875,
+        "ratings_ready": 3342.482421875,
+        "istio-proxy_ready": 4472.4794921875,
+        "all_containers_ready": 4472.4794921875
+      },
+      "total_time": 4472.4794921875
+    },
+    "reviews": {
+      "service": "reviews",
+      "start_time": 1753849423929.8833,
+      "stages": {
+        "pod_created": 3319.411376953125,
+        "reviews_ready": 3319.411376953125,
+        "istio-proxy_ready": 4437.8603515625,
+        "all_containers_ready": 4437.8603515625
+      },
+      "total_time": 4437.8603515625
+    }
+  }
+}

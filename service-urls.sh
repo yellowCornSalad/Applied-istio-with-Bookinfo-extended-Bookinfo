@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Extended Bookinfo 서비스 접속 URL 출력
+
+MINIKUBE_IP=$(minikube ip -p istiotest)
+
+echo "🌐 Extended Bookinfo 서비스 접속 정보"
+echo "======================================"
+echo "📍 Minikube IP: $MINIKUBE_IP"
+echo ""
+
+echo "📚 LoadBalancer 서비스 (권장):"
+echo "--------------------------------"
+echo "Library Portal:     http://$MINIKUBE_IP:31568"
+echo "User Service:       http://$MINIKUBE_IP:30822"
+echo "Catalog Service:    http://$MINIKUBE_IP:31580"
+echo "Inventory Service:  http://$MINIKUBE_IP:31117"
+echo "Order Service:      http://$MINIKUBE_IP:32495"
+echo "Payment Service:    http://$MINIKUBE_IP:30360"
+echo "Notification:       http://$MINIKUBE_IP:30742"
+echo "Search Service:     http://$MINIKUBE_IP:31046"
+echo "Recommendation:     http://$MINIKUBE_IP:31919"
+echo "Analytics Service:  http://$MINIKUBE_IP:30690"
+echo "Shipping Service:   http://$MINIKUBE_IP:31339"
+echo ""
+
+echo "🔗 NodePort 서비스 (기존):"
+echo "---------------------------"
+echo "Library Portal:     http://$MINIKUBE_IP:30081"
+echo "User Service:       http://$MINIKUBE_IP:30082"
+echo "Search Service:     http://$MINIKUBE_IP:30083"
+echo "Analytics Service:  http://$MINIKUBE_IP:30084"
+echo "Order Service:      http://$MINIKUBE_IP:30085"
+echo "Inventory Service:  http://$MINIKUBE_IP:30086"
+echo "Payment Service:    http://$MINIKUBE_IP:30087"
+echo "Notification:       http://$MINIKUBE_IP:30088"
+echo "Recommendation:     http://$MINIKUBE_IP:30089"
+echo "Catalog Service:    http://$MINIKUBE_IP:30090"
+echo "Shipping Service:   http://$MINIKUBE_IP:30091"
+echo ""
+
+echo "🔧 MTLS 설정:"
+echo "-------------"
+echo "./mtls-setup.sh permissive  # 권장 (PERMISSIVE 모드)"
+echo "./mtls-setup.sh strict      # STRICT 모드"
+echo "./mtls-setup.sh disable     # MTLS 비활성화"
+echo "./mtls-setup.sh status      # 현재 상태 확인"
+echo ""
+
+echo "📊 모니터링:"
+echo "------------"
+echo "Kiali: http://localhost:20001"
+echo "Grafana: http://localhost:3000"
+echo "Jaeger: http://localhost:16686"
+echo ""
+
+echo "🧪 테스트 명령어:"
+echo "----------------"
+echo "curl -s http://$MINIKUBE_IP:31568 | head -10"
+echo "curl -s http://$MINIKUBE_IP:30822 | head -10"
+echo "curl -s http://$MINIKUBE_IP:31580 | head -10" 

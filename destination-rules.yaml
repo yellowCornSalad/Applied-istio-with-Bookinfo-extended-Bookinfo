@@ -1,0 +1,65 @@
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: default
+  namespace: extended-bookinfo
+spec:
+  host: "*.extended-bookinfo.svc.cluster.local"
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: library-portal
+  namespace: extended-bookinfo
+spec:
+  host: library-portal-istio
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: user-service
+  namespace: extended-bookinfo
+spec:
+  host: user-service-istio
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: catalog-service
+  namespace: extended-bookinfo
+spec:
+  host: catalog-service-istio
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: order-service
+  namespace: extended-bookinfo
+spec:
+  host: order-service-istio
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: payment-service
+  namespace: extended-bookinfo
+spec:
+  host: payment-service-istio
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL 

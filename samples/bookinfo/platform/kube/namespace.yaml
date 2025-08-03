@@ -1,0 +1,9 @@
+# namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bookinfo-test
+  labels:
+    # 'cleanup-job' 이라는 고정된 이름 대신,
+    # 이 리소스를 생성하는 Job의 이름(create-test-namespace)이 동적으로 들어가도록 변수를 사용합니다.
+    kube-burner-job: "{{.JobName}}"

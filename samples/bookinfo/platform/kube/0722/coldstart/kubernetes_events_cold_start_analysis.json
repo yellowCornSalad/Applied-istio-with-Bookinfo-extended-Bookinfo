@@ -1,0 +1,330 @@
+{
+  "analysis_timestamp": "2025-07-23T20:36:00.117389",
+  "analysis_method": "kubernetes_events",
+  "environment": "minikube-istio-bookinfo",
+  "pod_events": {},
+  "timing_analysis": {
+    "productpage-v1-d5789fdfb-r9ltt": {
+      "pod_name": "productpage-v1-d5789fdfb-r9ltt",
+      "service": "productpage",
+      "restart_start_ms": 1753270432096.2312,
+      "pod_creation_ms": 1753270432000.0,
+      "scheduling_delay_ms": -96.231201171875,
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": true,
+          "started_at_ms": 1753270434000.0,
+          "startup_delay_ms": 2000.0
+        },
+        {
+          "name": "productpage",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": false,
+          "started_at_ms": 1753270434000.0,
+          "startup_delay_ms": 2000.0
+        }
+      ],
+      "total_ready_time_ms": 6977.32421875
+    },
+    "details-v1-65cfcf56f9-n6dcf": {
+      "pod_name": "details-v1-65cfcf56f9-n6dcf",
+      "service": "details",
+      "restart_start_ms": 1753270449082.833,
+      "pod_creation_ms": 1753270449000.0,
+      "scheduling_delay_ms": -82.8330078125,
+      "containers": [
+        {
+          "name": "details",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": false,
+          "started_at_ms": 1753270451000.0,
+          "startup_delay_ms": 2000.0
+        },
+        {
+          "name": "istio-proxy",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": true,
+          "started_at_ms": 1753270451000.0,
+          "startup_delay_ms": 2000.0
+        }
+      ],
+      "total_ready_time_ms": 6596.96142578125
+    },
+    "ratings-v1-7c9bd4b87f-2cwpw": {
+      "pod_name": "ratings-v1-7c9bd4b87f-2cwpw",
+      "service": "ratings",
+      "restart_start_ms": 1753270465689.8816,
+      "pod_creation_ms": 1753270465000.0,
+      "scheduling_delay_ms": -689.881591796875,
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": true,
+          "started_at_ms": 1753270468000.0,
+          "startup_delay_ms": 3000.0
+        },
+        {
+          "name": "ratings",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": false,
+          "started_at_ms": 1753270468000.0,
+          "startup_delay_ms": 3000.0
+        }
+      ],
+      "total_ready_time_ms": 6679.9208984375
+    },
+    "reviews-v1-6584ddcf65-7rn2p": {
+      "pod_name": "reviews-v1-6584ddcf65-7rn2p",
+      "service": "reviews",
+      "restart_start_ms": 1753270482379.8667,
+      "pod_creation_ms": 1753270482000.0,
+      "scheduling_delay_ms": -379.86669921875,
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": true,
+          "started_at_ms": 1753270485000.0,
+          "startup_delay_ms": 3000.0
+        },
+        {
+          "name": "reviews",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": false,
+          "started_at_ms": 1753270485000.0,
+          "startup_delay_ms": 3000.0
+        }
+      ],
+      "total_ready_time_ms": 7666.793701171875
+    },
+    "reviews-v2-6f85cb9b7c-jr9cf": {
+      "pod_name": "reviews-v2-6f85cb9b7c-jr9cf",
+      "service": "reviews",
+      "restart_start_ms": 1753270482379.8667,
+      "pod_creation_ms": 1753270482000.0,
+      "scheduling_delay_ms": -379.86669921875,
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": true,
+          "started_at_ms": 1753270485000.0,
+          "startup_delay_ms": 3000.0
+        },
+        {
+          "name": "reviews",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": false,
+          "started_at_ms": 1753270485000.0,
+          "startup_delay_ms": 3000.0
+        }
+      ],
+      "total_ready_time_ms": 7666.84814453125
+    },
+    "reviews-v3-6f5b775685-dj9fv": {
+      "pod_name": "reviews-v3-6f5b775685-dj9fv",
+      "service": "reviews",
+      "restart_start_ms": 1753270482379.8667,
+      "pod_creation_ms": 1753270482000.0,
+      "scheduling_delay_ms": -379.86669921875,
+      "containers": [
+        {
+          "name": "istio-proxy",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": true,
+          "started_at_ms": 1753270485000.0,
+          "startup_delay_ms": 3000.0
+        },
+        {
+          "name": "reviews",
+          "ready": true,
+          "restart_count": 0,
+          "is_sidecar": false,
+          "started_at_ms": 1753270484000.0,
+          "startup_delay_ms": 2000.0
+        }
+      ],
+      "total_ready_time_ms": 7666.87744140625
+    }
+  },
+  "service_statistics": {
+    "productpage": [
+      {
+        "pod_name": "productpage-v1-d5789fdfb-r9ltt",
+        "service": "productpage",
+        "restart_start_ms": 1753270432096.2312,
+        "pod_creation_ms": 1753270432000.0,
+        "scheduling_delay_ms": -96.231201171875,
+        "containers": [
+          {
+            "name": "istio-proxy",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": true,
+            "started_at_ms": 1753270434000.0,
+            "startup_delay_ms": 2000.0
+          },
+          {
+            "name": "productpage",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": false,
+            "started_at_ms": 1753270434000.0,
+            "startup_delay_ms": 2000.0
+          }
+        ],
+        "total_ready_time_ms": 6977.32421875
+      }
+    ],
+    "details": [
+      {
+        "pod_name": "details-v1-65cfcf56f9-n6dcf",
+        "service": "details",
+        "restart_start_ms": 1753270449082.833,
+        "pod_creation_ms": 1753270449000.0,
+        "scheduling_delay_ms": -82.8330078125,
+        "containers": [
+          {
+            "name": "details",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": false,
+            "started_at_ms": 1753270451000.0,
+            "startup_delay_ms": 2000.0
+          },
+          {
+            "name": "istio-proxy",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": true,
+            "started_at_ms": 1753270451000.0,
+            "startup_delay_ms": 2000.0
+          }
+        ],
+        "total_ready_time_ms": 6596.96142578125
+      }
+    ],
+    "ratings": [
+      {
+        "pod_name": "ratings-v1-7c9bd4b87f-2cwpw",
+        "service": "ratings",
+        "restart_start_ms": 1753270465689.8816,
+        "pod_creation_ms": 1753270465000.0,
+        "scheduling_delay_ms": -689.881591796875,
+        "containers": [
+          {
+            "name": "istio-proxy",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": true,
+            "started_at_ms": 1753270468000.0,
+            "startup_delay_ms": 3000.0
+          },
+          {
+            "name": "ratings",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": false,
+            "started_at_ms": 1753270468000.0,
+            "startup_delay_ms": 3000.0
+          }
+        ],
+        "total_ready_time_ms": 6679.9208984375
+      }
+    ],
+    "reviews": [
+      {
+        "pod_name": "reviews-v1-6584ddcf65-7rn2p",
+        "service": "reviews",
+        "restart_start_ms": 1753270482379.8667,
+        "pod_creation_ms": 1753270482000.0,
+        "scheduling_delay_ms": -379.86669921875,
+        "containers": [
+          {
+            "name": "istio-proxy",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": true,
+            "started_at_ms": 1753270485000.0,
+            "startup_delay_ms": 3000.0
+          },
+          {
+            "name": "reviews",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": false,
+            "started_at_ms": 1753270485000.0,
+            "startup_delay_ms": 3000.0
+          }
+        ],
+        "total_ready_time_ms": 7666.793701171875
+      },
+      {
+        "pod_name": "reviews-v2-6f85cb9b7c-jr9cf",
+        "service": "reviews",
+        "restart_start_ms": 1753270482379.8667,
+        "pod_creation_ms": 1753270482000.0,
+        "scheduling_delay_ms": -379.86669921875,
+        "containers": [
+          {
+            "name": "istio-proxy",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": true,
+            "started_at_ms": 1753270485000.0,
+            "startup_delay_ms": 3000.0
+          },
+          {
+            "name": "reviews",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": false,
+            "started_at_ms": 1753270485000.0,
+            "startup_delay_ms": 3000.0
+          }
+        ],
+        "total_ready_time_ms": 7666.84814453125
+      },
+      {
+        "pod_name": "reviews-v3-6f5b775685-dj9fv",
+        "service": "reviews",
+        "restart_start_ms": 1753270482379.8667,
+        "pod_creation_ms": 1753270482000.0,
+        "scheduling_delay_ms": -379.86669921875,
+        "containers": [
+          {
+            "name": "istio-proxy",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": true,
+            "started_at_ms": 1753270485000.0,
+            "startup_delay_ms": 3000.0
+          },
+          {
+            "name": "reviews",
+            "ready": true,
+            "restart_count": 0,
+            "is_sidecar": false,
+            "started_at_ms": 1753270484000.0,
+            "startup_delay_ms": 2000.0
+          }
+        ],
+        "total_ready_time_ms": 7666.87744140625
+      }
+    ]
+  }
+}

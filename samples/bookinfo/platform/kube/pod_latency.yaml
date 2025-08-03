@@ -1,0 +1,29 @@
+metricsEndpoints:
+  - indexer:
+      type: local
+      metricsDirectory: ./results
+
+global:
+  measurements:
+    - name: podLatency
+      thresholds:
+        - conditionType: Ready
+          metric: P99
+          threshold: 20000ms
+        - conditionType: Ready
+          metric: P99
+          threshold: 15000ms
+
+jobs:
+  - name: bookinfo-cold-start-test
+    jobIterations: 1
+    namespace: bookinfo-latency-test
+    qps: 1
+    burst: 1
+    namespacedIterations: false
+    cleanup: true
+    objects:
+      - objectTemplate: ./bookinfo-deployments.yaml
+        replicas: 1
+
+        

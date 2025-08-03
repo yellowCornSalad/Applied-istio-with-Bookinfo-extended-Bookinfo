@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reviews-{{.Iteration}}-{{.Replica}}
+  namespace: bookinfo-test
+  labels:
+    app: reviews
+    version: v1
+    kube-burner-job: {{.JobName}}
+    kube-burner-uuid: {{.UUID}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reviews
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: reviews
+        version: v1
+    spec:
+      containers:
+      - name: reviews
+        image: {{.containerImage}}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9080
+        # 원래 이미지의 기본 시작 방식을 유지하면서 타임스탬프만 추가
+        lifecycle:
+          postStart:
+            exec:
+              command:
+              - sh
+              - -c
+              - echo "[TIMING_REVIEWS] container_start_ms:$(date +%s%3N)"
+        env:
+        - name: SERVICE_VERSION
+          value: v1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: reviews-{{.Iteration}}-{{.Replica}}
+  namespace: bookinfo-test
+  labels:
+    app: reviews
+    service: reviews
+    kube-burner-job: {{.JobName}}
+spec:
+  ports:
+  - port: 9080
+    name: http
+  selector:
+    app: reviews

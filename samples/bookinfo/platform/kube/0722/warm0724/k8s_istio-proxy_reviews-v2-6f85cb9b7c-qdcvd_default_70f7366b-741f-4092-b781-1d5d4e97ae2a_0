@@ -1,0 +1,124 @@
+root@istio:/# docker logs 00d9c79a2a19
+2025-07-24T06:52:45.715170Z	info	FLAG: --concurrency="0"
+2025-07-24T06:52:45.715212Z	info	FLAG: --domain="default.svc.cluster.local"
+2025-07-24T06:52:45.715220Z	info	FLAG: --help="false"
+2025-07-24T06:52:45.715222Z	info	FLAG: --log_as_json="false"
+2025-07-24T06:52:45.715224Z	info	FLAG: --log_caller=""
+2025-07-24T06:52:45.715227Z	info	FLAG: --log_output_level="default:info"
+2025-07-24T06:52:45.715230Z	info	FLAG: --log_rotate=""
+2025-07-24T06:52:45.715233Z	info	FLAG: --log_rotate_max_age="30"
+2025-07-24T06:52:45.715237Z	info	FLAG: --log_rotate_max_backups="1000"
+2025-07-24T06:52:45.715240Z	info	FLAG: --log_rotate_max_size="104857600"
+2025-07-24T06:52:45.715244Z	info	FLAG: --log_stacktrace_level="default:none"
+2025-07-24T06:52:45.715263Z	info	FLAG: --log_target="[stdout]"
+2025-07-24T06:52:45.715266Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2025-07-24T06:52:45.715269Z	info	FLAG: --outlierLogPath=""
+2025-07-24T06:52:45.715273Z	info	FLAG: --profiling="true"
+2025-07-24T06:52:45.715276Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2025-07-24T06:52:45.715281Z	info	FLAG: --proxyLogLevel="warning"
+2025-07-24T06:52:45.715285Z	info	FLAG: --serviceCluster="istio-proxy"
+2025-07-24T06:52:45.715289Z	info	FLAG: --stsPort="0"
+2025-07-24T06:52:45.715292Z	info	FLAG: --templateFile=""
+2025-07-24T06:52:45.715296Z	info	FLAG: --tokenManagerPlugin=""
+2025-07-24T06:52:45.715307Z	info	FLAG: --vklog="0"
+2025-07-24T06:52:45.715312Z	info	Version 1.23.0-d0ca037e58f90f58b38b33c5769fec25b6bfa9f3-Clean
+2025-07-24T06:52:45.715329Z	info	Set max file descriptors (ulimit -n) to: 1048576
+2025-07-24T06:52:45.716070Z	info	Proxy role	ips=[10.244.3.193] type=sidecar id=reviews-v2-6f85cb9b7c-qdcvd.default domain=default.svc.cluster.local
+2025-07-24T06:52:45.716212Z	info	Apply proxy config from env {"tracing":{}}
+
+2025-07-24T06:52:45.718737Z	info	cpu limit detected as 2, setting concurrency
+2025-07-24T06:52:45.719161Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+concurrency: 2
+configPath: ./etc/istio/proxy
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istiod.istio-system.svc:15012
+drainDuration: 45s
+proxyAdminPort: 15000
+serviceCluster: istio-proxy
+statNameLength: 189
+statusPort: 15020
+terminationDrainDuration: 5s
+tracing: {}
+
+2025-07-24T06:52:45.719181Z	info	JWT policy is third-party-jwt
+2025-07-24T06:52:45.719186Z	info	using credential fetcher of JWT type in cluster.local trust domain
+2025-07-24T06:52:45.920946Z	info	Starting default Istio SDS Server
+2025-07-24T06:52:45.920966Z	info	CA Endpoint istiod.istio-system.svc:15012, provider Citadel
+2025-07-24T06:52:45.920978Z	info	Using CA istiod.istio-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2025-07-24T06:52:45.920963Z	info	Opening status port 15020
+2025-07-24T06:52:45.921507Z	info	xdsproxy	Initializing with upstream address "istiod.istio-system.svc:15012" and cluster "Kubernetes"
+2025-07-24T06:52:45.922725Z	info	Pilot SAN: [istiod.istio-system.svc]
+2025-07-24T06:52:45.923381Z	info	Starting proxy agent
+2025-07-24T06:52:45.923413Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --allow-unknown-static-fields -l warning --component-log-level misc:error --concurrency 2]
+2025-07-24T06:52:45.940252Z	info	sds	Starting SDS grpc server
+2025-07-24T06:52:45.940283Z	info	sds	Starting SDS server for workload certificates, will listen on "var/run/secrets/workload-spiffe-uds/socket"
+2025-07-24T06:52:45.940352Z	info	starting Http service at 127.0.0.1:15004
+2025-07-24T06:52:45.991522Z	warning	envoy main external/envoy/source/server/server.cc:843	Usage of the deprecated runtime key overload.global_downstream_max_connections, consider switching to `envoy.resource_monitors.downstream_connections` instead.This runtime key will be removed in future.	thread=13
+2025-07-24T06:52:45.991849Z	warning	envoy main external/envoy/source/server/server.cc:936	There is no configured limit to the number of allowed active downstream connections. Configure a limit in `envoy.resource_monitors.downstream_connections` resource monitor.	thread=13
+2025-07-24T06:52:45.995529Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=1
+2025-07-24T06:52:46.022978Z	info	ads	ADS: new connection for node:2
+2025-07-24T06:52:46.022976Z	info	ads	ADS: new connection for node:1
+2025-07-24T06:52:46.024570Z	info	cache	generated new workload certificate	resourceName=default latency=102.787054ms ttl=23h59m59.97543471s
+2025-07-24T06:52:46.024596Z	info	cache	Root cert has changed, start rotating root cert
+2025-07-24T06:52:46.024675Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.975325808s
+2025-07-24T06:52:46.024690Z	info	cache	returned workload certificate from cache	ttl=23h59m59.975310068s
+2025-07-24T06:52:46.024814Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.975187751s
+2025-07-24T06:52:46.025078Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.974921897s
+2025-07-24T06:52:46.679073Z	info	Readiness succeeded in 965.184396ms
+2025-07-24T06:52:46.679850Z	info	Envoy proxy is ready
+2025-07-24T07:20:19.126758Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=2
+2025-07-24T07:52:51.745023Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=3
+2025-07-24T08:22:04.080154Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=4
+2025-07-24T08:50:46.777881Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=5
+2025-07-24T09:19:12.359735Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=6
+2025-07-24T09:46:36.278903Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=7
+2025-07-24T10:14:54.380194Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=8
+2025-07-24T10:47:35.493405Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=9
+2025-07-24T11:20:32.779575Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=10
+2025-07-24T11:51:57.322637Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=11
+2025-07-24T12:20:45.351665Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=12
+2025-07-24T12:53:03.033132Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=13
+2025-07-24T13:22:32.980098Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=14
+2025-07-24T13:53:46.429256Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=15
+2025-07-24T14:23:07.618688Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=16
+2025-07-24T14:50:59.791216Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=17
+2025-07-24T15:19:55.449691Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=18
+2025-07-24T15:50:20.547252Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=19
+2025-07-24T16:18:25.727285Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=20
+2025-07-24T16:50:24.771972Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=21
+2025-07-24T17:19:58.746227Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=22
+2025-07-24T17:51:01.486696Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=23
+2025-07-24T18:21:52.811409Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=24
+2025-07-24T18:52:46.292971Z	info	cache	generated new workload certificate	resourceName=default latency=279.608601ms ttl=23h59m59.707031225s
+2025-07-24T18:53:38.305932Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=25
+2025-07-24T19:24:33.545880Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=26
+2025-07-24T19:56:32.135751Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=27
+2025-07-24T20:27:28.976242Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=28
+2025-07-24T20:58:45.620389Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=29
+2025-07-24T21:29:34.966086Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=30
+2025-07-24T22:02:19.200627Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=31
+2025-07-24T22:30:25.044780Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=32
+2025-07-24T23:01:44.019279Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=33
+2025-07-24T23:33:23.884482Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=34
+2025-07-25T00:03:08.256505Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=35
+2025-07-25T00:35:14.539885Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=36
+2025-07-25T01:07:07.973901Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=37
+2025-07-25T01:39:37.297238Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=38
+2025-07-25T02:06:49.549400Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=39
+2025-07-25T02:37:38.896407Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=40
+2025-07-25T03:05:45.202021Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=41
+2025-07-25T03:36:06.110236Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=42
+2025-07-25T04:09:06.350083Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=43
+2025-07-25T04:40:05.738845Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=44
+2025-07-25T05:07:34.225768Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=45
+2025-07-25T05:40:23.812955Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=46
+2025-07-25T06:08:33.261414Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=47
+2025-07-25T06:38:45.226613Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=48
+2025-07-25T06:52:46.327789Z	info	cache	generated new workload certificate	resourceName=default latency=180.17352ms ttl=23h59m59.672213533s
+2025-07-25T07:08:46.712911Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=49
+2025-07-25T07:40:47.365430Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=50
+2025-07-25T08:13:01.902268Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=51
+2025-07-25T08:45:07.866992Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=52
+2025-07-25T09:14:50.786223Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=53
+2025-07-25T09:45:09.934447Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=54
+
