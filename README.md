@@ -206,5 +206,4 @@ kubectl logs -n extended-bookinfo <pod-name> -c istio-proxy
 
 ---
 
-**작성자**: [Your Name]  
 **최종 업데이트**: 2025년 8월 3일
